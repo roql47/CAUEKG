@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT 챗봇 접속</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 15px 25px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        p {
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>GPT 챗봇에 접속하시려면 아래 버튼을 클릭하세요</h1>
+    <button onclick="openInBrowser()">외부 브라우저에서 열기</button>
+    <p>버튼이 작동하지 않으면 링크를 복사하여 Chrome, Firefox 등의 표준 웹 브라우저에 붙여넣어 접속해 주세요.</p>
+
+    <script>
+        function openInBrowser() {
+            const chatbotURL = "https://chatgpt.com/g/g-o21IrW9W1-gwangsangoyangi-caesbos"; // 여기에 GPT 챗봇 링크를 입력하세요
+            window.open(chatbotURL, '_blank');
+        }
+    </script>
+</body>
+</html>
