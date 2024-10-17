@@ -21,6 +21,23 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
             margin-bottom: 20px;
         }
+        .info-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        .info-card h2 {
+            margin: 0;
+            font-size: 22px;
+            color: #4CAF50;
+        }
+        .info-card p {
+            color: #555;
+            line-height: 1.5;
+        }
         button {
             padding: 15px 30px;
             font-size: 18px;
@@ -48,6 +65,9 @@
             h1 {
                 font-size: 22px;
             }
+            .info-card {
+                padding: 15px;
+            }
             button {
                 padding: 12px 24px;
                 font-size: 16px;
@@ -57,6 +77,10 @@
 </head>
 <body>
     <h1>GPT 심전도앱에 접속하시려면 아래 버튼을 클릭하세요</h1>
+    <div class="info-card">
+        <h2>앱 정보</h2>
+        <p>이 앱은 심전도 데이터를 분석하고, 인공지능을 통해 유용한 정보를 제공합니다. 간편하게 심전도를 확인하고 필요한 조치를 취하세요!</p>
+    </div>
     <button onclick="openInBrowser()">외부 브라우저에서 열기</button>
 
     <script>
