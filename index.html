@@ -83,10 +83,21 @@
     </div>
     <button onclick="openInBrowser()">외부 브라우저에서 열기</button>
 
+    <div class="info-card">
+        <h2>추가 앱 정보</h2>
+        <p>중앙대학교 광명병원의 또 다른 기능을 제공하는 심전도 앱을 확인해보세요.</p>
+    </div>
+    <button onclick="openSecondaryBrowser()">위 페이지 접속이 안된다면 아래페이지로 이동하세요.</button>
+
     <script>
         function openInBrowser() {
-            const chatbotURL = "https://roql47.github.io/EKGAIChallange/"; // 여기에 GPT 챗봇 링크를 입력하세요
+            const chatbotURL = "https://roql47.github.io/EKGAIChallange/"; // 첫 번째 링크
             window.open(chatbotURL, '_blank');
+        }
+
+        function openSecondaryBrowser() {
+            const secondaryURL = "https://roql47.github.io/EKGAIChallange/"; // 두 번째 링크
+            window.open(secondaryURL, '_blank');
         }
     </script>
 </body>
