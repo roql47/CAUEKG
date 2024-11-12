@@ -24,18 +24,23 @@
         }
         .info-container {
             display: flex;
-            flex-direction: column; /* 세로 정렬 */
+            flex-direction: row; /* 가로 정렬 */
+            justify-content: center;
             align-items: center;
-            margin-bottom: 20px; /* 요소 간 여백 */
+            gap: 20px; /* 요소 간격 */
+            margin-top: 20px;
         }
         .info-card {
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            margin: 10px auto;
-            max-width: 400px;
-            text-align: left;
+            max-width: 300px;
+            text-align: center; /* 텍스트 가운데 정렬 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* 수직 중앙 정렬 */
+            align-items: center; /* 수평 중앙 정렬 */
         }
         .info-card h2 {
             margin: 0;
@@ -68,11 +73,9 @@
         }
         /* 모바일 기기를 위한 반응형 디자인 */
         @media (max-width: 600px) {
-            body {
-                padding: 20px;
-            }
-            h1 {
-                font-size: 22px;
+            .info-container {
+                flex-direction: column; /* 모바일에서는 세로 정렬 */
+                gap: 10px;
             }
             .info-card {
                 padding: 15px;
@@ -90,15 +93,13 @@
         <div class="info-card">
             <h2>심전도앱 Server 1</h2>
             <p>앱으로 접속할 수 있는 서버입니다. (이미지 로딩이 빠르나 간혹 접속이 안될 수 있습니다)</p>
+            <button onclick="openInBrowser()">심전도앱 링크 접속하기</button>
         </div>
-        <button onclick="openInBrowser()">심전도앱 링크 접속하기</button>
-    </div>
-    <div class="info-container">
         <div class="info-card">
             <h2>심전도앱 Server 2</h2>
             <p>24시간 오픈 서버입니다. 위 링크가 접속이 안된다면 여기로 접속하세요 (이미지 로딩이 조금 느립니다)</p>
+            <button onclick="openSecondaryBrowser()">심전도앱 링크 접속하기</button>
         </div>
-        <button onclick="openSecondaryBrowser()">심전도앱 링크 접속하기</button>
     </div>
 
     <script>
